@@ -10,3 +10,15 @@ def chara_times(text):
         else:
             dic[txt] = 1
     return dic
+
+def sort_on(items):
+    return items["num"]
+def sorting(dictio):
+    list = []
+    for entry in dictio:
+            list.append({"char": entry, "num": dictio[entry]})
+    list.sort(reverse=True, key=sort_on)
+    return list
+    
+
+    
